@@ -1,4 +1,8 @@
 # PCRemote
+
+
+![Preview](https://raw.githubusercontent.com/danwardvs/PCRemote/master/setup.jpg)
+
 An IR reader paired with an Arduino and a python server to turn an old TV remote into a media controller for PC
 
 The hardware consists of an Arduino Uno (although any Arduino will do), and an inexpensive IR reciever TSOP38238.
