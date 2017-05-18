@@ -1,4 +1,3 @@
-
 //First will create a decoder that handles only NEC, Sony and the hash
 // decoder. If it is not NEC or Sony that it will return a 32 bit hash.
 #include <IRLibDecodeBase.h> 
@@ -25,10 +24,11 @@ void loop() {
   if(myReceiver.getResults()) {
     myDecoder.decode();
     if(myDecoder.protocolNum==UNKNOWN) {
-     // Serial.print(F("Unknown protocol. Hash value is: 0x"));
-
+      
         Serial.println(myDecoder.value,HEX);
+        
     } else {
+      
       Serial.println(myDecoder.value);
  
     };
